@@ -1,12 +1,12 @@
 package org.example.lab;
 public class UserData {
 
-    enum PersonType {
+    public enum PersonType {
         ADULT,
         KID
     }
 
-    enum StrategyLoggerTarget {
+    public enum StrategyLoggerTarget {
         FILE,
         CONSOLE
     }

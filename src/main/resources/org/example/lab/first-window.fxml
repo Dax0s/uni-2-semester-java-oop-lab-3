@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.lab.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab.controllers.FirstWindow">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="13.0" layoutY="14.0" text="Vardas:" />
+            <Label layoutX="14.0" layoutY="61.0" text="Amžius" />
+            <TextField fx:id="name" layoutX="13.0" layoutY="29.0" promptText="Vardas" />
+            <TextField fx:id="age" layoutX="13.0" layoutY="76.0" promptText="Amžius" />
+            <Label layoutX="14.0" layoutY="129.0" text="&quot;Decorator&quot; žinučių failo pavadinimas:" />
+            <TextField fx:id="decoratorFilename" layoutX="13.0" layoutY="144.0" promptText="Pavadinimas" />
+            <Label layoutX="16.0" layoutY="302.0" text="&quot;Strategy&quot; žinučių failo pavadinimas:" />
+            <TextField fx:id="decoratorMessage" layoutX="14.0" layoutY="196.0" promptText="Žinutė" />
+            <TextField fx:id="strategyFilename" layoutX="15.0" layoutY="317.0" promptText="Pavadinimas" />
+            <Label layoutX="15.0" layoutY="181.0" text="&quot;Decorator&quot; žinutė" />
+            <Label layoutX="16.0" layoutY="348.0" text="&quot;Strategy&quot; žinutė" />
+            <TextField fx:id="strategyMesssage" layoutX="15.0" layoutY="363.0" promptText="Žinutė" />
+            <ChoiceBox fx:id="choices" layoutX="12.0" layoutY="267.0" prefWidth="150.0" />
+            <Label layoutX="12.0" layoutY="252.0" text="&quot;Strategy&quot; žinutės vieta" />
+            <Button layoutX="497.0" layoutY="363.0" mnemonicParsing="false" onAction="#onNextWindowClick" text="Kitas langas" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
